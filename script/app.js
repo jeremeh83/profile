@@ -25,7 +25,7 @@ class FadeAuto {
                 
                 
                 setTimeout(() => {
-                    if (!mouseover){
+                    if (!this.mouseover){
                     object.classList.remove('active');
                     };
                 },2000);
