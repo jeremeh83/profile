@@ -23,11 +23,13 @@ class FadeAuto {
             document.addEventListener('scroll', () => {
                 object.classList.add('active');           
                 
-                if (!mouseover){
+                
                 setTimeout(() => {
+                    if (!mouseover){
                     object.classList.remove('active');
+                    };
                 },2000);
-            };
+            
             
             });
         
