@@ -3,15 +3,18 @@ class FadeAuto {
     constructor(){
         this.fadeObjects = document.querySelectorAll('.fadeAuto');
         this.fadeHeaderObjects = document.querySelectorAll('.fadeAuto.header');
+        this.mouseover = null;
     }
     fadeAll() {
         this.fadeObjects.forEach((object) => {
 
             object.addEventListener('mouseenter', () => {
                 object.classList.add('active');
+                this.mouseover = true;
             });
             object.addEventListener('mouseleave', () => {
                 object.classList.remove('active');
+                this.mouseover = false;
             });
         // });
 
@@ -20,9 +23,11 @@ class FadeAuto {
             document.addEventListener('scroll', () => {
                 object.classList.add('active');           
                 
+                if (!mouseover){
                 setTimeout(() => {
                     object.classList.remove('active');
                 },2000);
+            };
             
             });
         
