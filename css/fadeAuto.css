@@ -1,0 +1,15 @@
+.fadeAuto {
+    opacity: 25%;
+    transition: opacity .5s;
+}
+
+.fadeAuto.header{
+    position: fixed;
+    border-radius: 0 0 30px 30px; 
+    height: 60px;
+}
+
+.fadeAuto.active {
+    opacity: 100%;
+    transition: opacity .5s;
+}
