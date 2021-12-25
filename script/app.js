@@ -13,9 +13,9 @@ class FadeAuto {
             object.addEventListener('mouseleave', () => {
                 object.classList.remove('active');
             });
-        });
+        // });
 
-        this.fadeHeaderObjects.forEach((object) => {
+        // this.fadeHeaderObjects.forEach((object) => {
 
             document.addEventListener('scroll', () => {
                 object.classList.add('active');           
