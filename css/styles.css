@@ -8,7 +8,7 @@ header {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(30, 110, 110);
   margin: 0 0;
   margin-top: 103px;
   background: url(../images/tropical.jpg) no-repeat left fixed;
@@ -16,7 +16,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+  color: rgb(212, 226, 226);
   font-size: 1.5em;
   font-family: 'Titillium Web', sans-serif;
 }
@@ -94,4 +94,21 @@ p {
 .carousel {
   padding-left: 30%;
   padding-right: 30%;
+}
+
+.nav {
+  display: contents;
+  flex-wrap: inherit;
+}
+
+@media only screen and (max-width: 642px) {
+  body {
+    margin-top: 188px;
+  }
+  header {
+    height: 170px;
+  }
+  .content {
+    scroll-margin-top: 200px;
+  }
 }
