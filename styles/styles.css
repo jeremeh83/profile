@@ -17,8 +17,11 @@ body{
   width: 100%;
 }
 .header {
-  position: static;
+  margin: 0;
   margin-top: 27vw;
+  text-align: center; 
+  padding: 0;
+  max-height: 469px;
 }
 
 .iphone-img{
@@ -26,7 +29,6 @@ body{
 }
 
 .header-content{
-  position: static;
   width: 100vw;
   background-color: rgba(0, 255, 247, .50);
   padding: 2vw;
@@ -60,33 +62,29 @@ body{
 
 @media screen and (min-width: 992px) {
 
+  .header {
+    margin-top: 10vw;
+  }
+
   .iphone-img{
     display: block;
-    position:absolute;
+    display: inline-block;
     max-width: 300px;    
     transform: rotate(-20deg);
-    top: 13vh;
-    left: 0; 
-    right: 50vw;
-    margin-left: auto; 
-    margin-right: auto;  
+    margin-top: -180px;
+    margin-right: 50px;
   }
   
   .header-content{
-    position: absolute;
+    display: inline-block;
     width: 55vw;
     border-radius: 12px;
     max-width: 714px;
-    top: 13vh;
-    left: 400px; 
-    right: 0;
-    margin-left: auto; 
-    margin-right: auto;  
   }
 
   .page-content {
     width: 100vw;
-    margin-top: 700px;
+    margin-top: 35px;
   }
   
   .header-background-img {
@@ -103,9 +101,8 @@ body{
   .iphone-img {
     right: 800px;
   }
-
   .header {
     position: static;
-    margin-top: 378px;
+    margin-top: 140px;
   }
 }
