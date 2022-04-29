@@ -61,8 +61,14 @@ body{
 }
 
 .imgBox {
-  height: 14rem;
+  height: 224px;
 }
+
+.card-body {
+  height: 127px;
+}
+
+
 
 @media screen and (min-width: 992px) {
 
